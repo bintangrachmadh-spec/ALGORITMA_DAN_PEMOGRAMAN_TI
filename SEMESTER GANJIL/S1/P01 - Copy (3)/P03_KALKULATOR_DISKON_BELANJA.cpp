@@ -1,0 +1,25 @@
+#include <iostream> 
+#include <iomanip> 
+#include <cmath> 
+using namespace std; 
+int main() { 
+    double harga; 
+    double diskon; 
+    cout << "masukkan harga barang:" << endl; 
+    cin >> harga; 
+    cout << endl; 
+    cout << "masukkan jumlah diskon (dalam format %)" << endl; 
+    cin >> diskon; 
+    double x = harga*diskon/100; 
+    double y = harga-x; 
+    cout << "harga barang setelah diskon adalah:" << endl; 
+    cout << y; 
+    return 0; 
+} 
+/*masukkan harga barang:
+498689498
+
+masukkan jumlah diskon (dalam format %)
+20
+harga barang setelah diskon adalah:
+3.98952e+08*/
